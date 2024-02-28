@@ -1,6 +1,19 @@
 # SharingHub Docs
 
-## Environment setup
+## Table of contents
+
+- [Development](#development)
+  - [Environment setup](#environment-setup)
+  - [Serve](#serve)
+- [Production](#production)
+  - [Local build](#local-build)
+  - [Docker image](#docker-image)
+
+## Development
+
+### Environment setup
+
+Python 3.11 required.
 
 Setup the environment:
 
@@ -10,7 +23,7 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Development
+### Serve
 
 Edit the docs and update it live with MkDocs:
 
@@ -18,10 +31,26 @@ Edit the docs and update it live with MkDocs:
 mkdocs serve
 ```
 
-## Build
+## Production
+
+### Local build
 
 Build the docs with:
 
 ```bash
 mkdocs build
+```
+
+### Docker image
+
+Build the image with:
+
+```bash
+docker build . -t sharinghub-docs --build-arg VERSION=$(git rev-parse --short HEAD)
+```
+
+Run it locally with:
+
+```bash
+docker run --rm -p 5000:80 --name sharinghub-docs sharinghub-docs:latest
 ```
