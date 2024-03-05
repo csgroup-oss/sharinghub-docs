@@ -23,6 +23,12 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
+Install the [pre-commit](https://pre-commit.com/) hooks:
+
+```bash
+pre-commit install --install-hooks
+```
+
 ### Serve
 
 Edit the docs and update it live with MkDocs:
