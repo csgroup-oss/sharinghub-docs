@@ -7,8 +7,6 @@ include:
       hadolint-args: "--failure-threshold warning"
       trivy-security-level-threshold: "HIGH,CRITICAL"
   - component: gitlab.si.c-s.fr/space_platforms/metis/tools/ci-precommit/gitlab-ci-precommit@3.0.0
-    inputs:
-      fetch-refs: true
 
 stages:
   - build
