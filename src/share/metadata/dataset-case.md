@@ -2,7 +2,7 @@
 
 The INRIA Aerial Image Labeling dataset is comprised of 360 RGB tiles of 5000×5000px with a spatial resolution of 30cm/px on 10 cities across the globe.
 
-You can find this dataset in SharingHub [here](https://sharinghub.p2.csgroup.space/ui/#/stac/collections/dataset/items/space_applications/mlops-services/sharinghub-tests/public/inria-dataset).
+You can find this dataset in SharingHub [here](https://sharinghub.p2.csgroup.space/ui/#/api/stac/collections/dataset/items/space_applications/mlops-services/sharinghub-tests/public/inria-dataset).
 
 ![Preview](../../assets/figures/share/dataset-example.png)
 

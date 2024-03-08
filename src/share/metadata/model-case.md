@@ -2,7 +2,7 @@
 
 We will study the case of a model used for building detection on Aerial image.
 
-You can find this model in SharingHub [here](https://sharinghub.p2.csgroup.space/ui/#/stac/collections/ai-model/items/space_applications/mlops-services/sharinghub-tests/public/unet-building-footprint-segmentation-aerial-image).
+You can find this model in SharingHub [here](https://sharinghub.p2.csgroup.space/ui/#/api/stac/collections/ai-model/items/space_applications/mlops-services/sharinghub-tests/public/unet-building-footprint-segmentation-aerial-image).
 
 ![Preview](../../assets/figures/share/model-example.png)
 
