@@ -16,24 +16,24 @@ To upload a file with curl.
 Using PUT:
 
 ```shell
-curl -L -d @<file_to_upload> -X PUT -H 'Content-Type:application/octet-stream' -H 'X-Gitlab-Token:<your_gitlab_token>' https://sharinghub.p2.csgroup.space/store/<project_id>/<complete_file_path>
+curl -L -d @<file_to_upload> -X PUT -H 'Content-Type:application/octet-stream' -H 'X-Gitlab-Token:<your_gitlab_token>' https://sharinghub.p2.csgroup.space/api/store/<project_id>/<complete_file_path>
 
 # or
 
-curl -L -T <file_to_upload> -X PUT -H 'Content-Type:application/octet-stream' -H 'X-Gitlab-Token:<your_gitlab_token>' https://sharinghub.p2.csgroup.space/store/<project_id>/<complete_file_path>
+curl -L -T <file_to_upload> -X PUT -H 'Content-Type:application/octet-stream' -H 'X-Gitlab-Token:<your_gitlab_token>' https://sharinghub.p2.csgroup.space/api/store/<project_id>/<complete_file_path>
 ```
 
 Using POST:
 > Please note that the PUT function can be several times faster than the POST method.
 
 ```shell
-curl -d @<file_to_upload> -H 'X-Gitlab-Token:<your_gitlab_token>' https://sharinghub.p2.csgroup.space/store/<project_id>/
+curl -d @<file_to_upload> -H 'X-Gitlab-Token:<your_gitlab_token>' https://sharinghub.p2.csgroup.space/api/store/<project_id>/
 ```
 
 To access the data:
 
 ```shell
-curl -L -H 'X-Gitlab-Token:toto' http://localhost:19422/store/1243/README.md
+curl -L -H 'X-Gitlab-Token:toto' http://localhost:19422/api/store/1243/README.md
 ```
 
 ## Using `upload_to_sharinghub.sh`
@@ -88,7 +88,7 @@ project_id="$2"
 sub_path="${3:-data}"
 
 # Set the server URL
-server_url="https://sharinghub.p2.csgroup.space/store/$project_id/$sub_path"
+server_url="https://sharinghub.p2.csgroup.space/api/store/$project_id/$sub_path"
 
 # Loop through all files and directories in the specified directory
 for file in "$dir_path"/*

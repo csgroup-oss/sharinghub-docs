@@ -45,7 +45,7 @@ You can now retrieve the project's unique identifier (`<project_id>`) by connect
 This id is necessary to identify the storage path for DVC, so you can continue the configuration.
 
 ```bash
-dvc remote add -d shstore https://sharinghub.p2.csgroup.space/store/<project_id>
+dvc remote add -d shstore https://sharinghub.p2.csgroup.space/api/store/<project_id>
 dvc remote modify shstore auth custom
 dvc remote modify shstore custom_auth_header 'X-Gitlab-Token'
 dvc remote default shstore
