@@ -60,3 +60,9 @@ Run it locally with:
 ```bash
 docker run --rm -p 5000:80 --name sharinghub-docs sharinghub-docs:latest
 ```
+
+## Copyright and License
+
+Copyright 2024 `CS GROUP - France`
+
+**SharingHub Docs**  is an open source software, distributed under the Apache License 2.0. See the [`LICENSE`](./LICENSE) file for more information.
