@@ -17,7 +17,7 @@ As a prerequisite for using DVC, you must have a Git repository initialized:
 mkdir example-dvc
 cd example-dvc
 git init
-git remote add origin https://a:<your_personal_gitlab_token>@gitlab.si.c-s.fr/<project_path>
+git remote add origin https://a:<your_personal_gitlab_token>@gitlab.example.com/<project_path>
 ```
 
 !!! note
@@ -38,14 +38,14 @@ The following command will push the modifications into GitLab, create the projec
 git push --set-upstream origin main
 ```
 
-You can now retrieve the project's unique identifier (`<project_id>`) by connecting to the GitLab interface via the URL `https://gitlab.si.c-s.fr/<project_path>`.
+You can now retrieve the project's unique identifier (`<project_id>`) by connecting to the GitLab interface via the URL `https://gitlab.example.com/<project_path>`.
 
 ![gitlab_project_id.png](../assets/figures/tutorials/gitlab-project-id.png)
 
 This id is necessary to identify the storage path for DVC, so you can continue the configuration.
 
 ```bash
-dvc remote add -d shstore https://sharinghub.p2.csgroup.space/api/store/<project_id>
+dvc remote add -d shstore https://sharinghub.example.com/api/store/<project_id>
 dvc remote modify shstore auth custom
 dvc remote modify shstore custom_auth_header 'X-Gitlab-Token'
 dvc remote default shstore
@@ -104,7 +104,7 @@ To retrieve the managed data:
 * and download the data through `dvc pull`.
 
 ```bash
-git clone https://gitlab.si.c-s.fr/<project_path>
+git clone https://gitlab.example.com/<project_path>
 cd example-dvc
 dvc remote modify --local shstore password <your_personal_gitlab_token>
 dvc pull

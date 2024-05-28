@@ -342,7 +342,7 @@ href: <collection id>+<gitlab project url>
 A more concrete example:
 
 ```yaml title="Metadata example"
-href: dataset+https://gitlab.si.c-s.fr/space_applications/mlops-services/sharinghub-tests/dataset-sample
+href: dataset+https://gitlab.example.com/space_applications/mlops-services/sharinghub-tests/dataset-sample
 ```
 
 In SharingHub, an URL to the STAC Item will then be created.

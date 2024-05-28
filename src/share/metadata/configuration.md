@@ -40,10 +40,10 @@ providers:
     url: https://www.csgroup.eu
   - name: GitLab CS
     roles: ["host"]
-    url: https://gitlab.si.c-s.fr/
+    url: https://gitlab.example.com
 
 related:
-  ai-model: https://gitlab.si.c-s.fr/space_applications/mlops-services/sharinghub-tests/model-sample
+  ai-model: https://gitlab.example.com/<ai-model-project-repository>
 
 assets:
   - "*.py"

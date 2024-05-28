@@ -122,7 +122,7 @@ nav:
 # Footer links
 extra:
   social:
-    - icon: fontawesome/brands/gitlab
-      link: "https://gitlab.si.c-s.fr/space_applications/mlops-services/sharinghub-docs"
+    - icon: fontawesome/brands/github
+      link: "https://github.com/csgroup-oss/sharinghub"
     - icon: fontawesome/solid/copyright
       link: "https://www.csgroup.eu"

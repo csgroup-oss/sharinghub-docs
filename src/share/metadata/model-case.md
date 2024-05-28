@@ -2,8 +2,6 @@
 
 We will study the case of a model used for building detection on Aerial image.
 
-You can find this model in SharingHub [here](https://sharinghub.p2.csgroup.space/ui/#/api/stac/collections/ai-model/items/space_applications/mlops-services/sharinghub-tests/public/unet-building-footprint-segmentation-aerial-image).
-
 ![Preview](../../assets/figures/share/model-example.png)
 
 ## Configuration
@@ -39,7 +37,7 @@ Here's the project metadata:
 title: Unet neural network for building detection on Aerial image
 
 related:
-  dataset: https://gitlab.si.c-s.fr/space_applications/mlops-services/sharinghub-tests/public/inria-dataset
+  dataset: https://gitlab.example.com/<dataset-project-repository>
 
 assets:
 - "*.ipynb"

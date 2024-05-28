@@ -16,7 +16,7 @@ All projects related to the AI models category are served by the SharingHub in t
 An example getting projects from AI models category using the STAC API:
 
 ```bash
-curl https://sharinghub.p2.csgroup.space/api/stac/search?collections=ai-model&limit=100
+curl https://sharinghub.example.com/api/stac/search?collections=ai-model&limit=100
 ```
 
 ## Datasets
