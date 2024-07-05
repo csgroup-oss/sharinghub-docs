@@ -47,6 +47,8 @@ The preview can be auto-discovered in the README, if your image "alt" is "Previe
 ![Preview](<url>)
 ```
 
+It can also be auto-discovered if the following files are found in the repository: `preview.png`, `preview.jpg`, `preview.jpeg`.
+
 Or, you can define it in the metadata.
 
 ```yaml title="Metadata"
