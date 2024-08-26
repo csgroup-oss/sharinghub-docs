@@ -1,10 +1,10 @@
 # Search
 
-SharingHub is a platform packed with AI models, Datasets, Libraries and tools, Challenges.
+SharingHub is a platform with _your_ AI models, Datasets, Processors, Tools/Libraries, and Dashboards.
 
 Everything you need for your Machine Learning projects is accessible through SharingHub which provides several search features.
 
-![item views](../assets/figures/explore/search/item_views.png)
+![item views](../assets/figures/explore/search/item-views.png)
 
 ## Tag search tab
 
@@ -19,13 +19,13 @@ There are two types of tags: **common tags**, which refers to the most commonly 
 
 The search by title field allows you to dynamically filter projects in the current category page.
 
-![filter by title](../assets/figures/explore/search/filter_by_title.png)
+![filter by title](../assets/figures/explore/search/filter-by-title.png)
 
 ## Filter by starred projects
 
-A a category page, the star button allows to filter only projects you have starred. Projects of any categories can be starred independently on SharingHub or GitLab and this status will be automatically synchronized between both.
+The star button allows to filter only projects you have starred. Projects of any categories can be starred independently on SharingHub or GitLab and this status will be automatically synchronized between both.
 
-![filter by star ](../assets/figures/explore/search/filter_by_stars.png)
+![filter by star ](../assets/figures/explore/search/filter-by-starred.png)
 
 Click on the button again to deactivate this filtering.
 
@@ -38,14 +38,14 @@ In addition to filtering, it is also possible to sort results to optimize visual
 - Most popular projects (by number of likes).
 - You can also sort them in ascending alphabetical order to facilitate your search.
 
-![sort item](../assets/figures/explore/search/sort_item.png)
+![sort item](../assets/figures/explore/search/sort-items.png)
 
 ## Search Anywhere
 
-![global search](../assets/figures/explore/search/global_search.png)
+![global search](../assets/figures/explore/search/global-search.png)
 
 ## Advanced Search
 
 Sometimes, you may want to perform complex or more precise searches. The "advanced search" view provides a richer interface for your searches.
 
-![advanced search page](../assets/figures/explore/search/advanced_search_page.png)
+![advanced search page](../assets/figures/explore/search/advanced-search.png)

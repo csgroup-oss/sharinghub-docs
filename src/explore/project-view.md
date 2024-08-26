@@ -1,36 +1,73 @@
 # Project view
 
-The main SharingHub view, shown below, is designed to display as much metadata as possible about a project, whether it's an AI model, a dataset, a tool/library or a challenge.
+The main SharingHub view, shown below, is designed to display as much metadata as possible about a project, whether it's an AI model, a dataset, or another category.
 
-![category overview](../assets/figures/explore/project-view/category_overview.png)
+![Project overview](../assets/figures/explore/project-view/overview.png)
 
-## 1. Project title Section
+## 1. Title/Header
 
-This section is made up of the project's name as described in GitLab and a link that takes you directly to the repository where the project is hosted.
+This section is made up of the project's name as described in GitLab and a link that takes you directly to the repository where the project is hosted. You can also find the share and start buttons.
 
-## 2. Keywords/Tags Section
+![Project title](../assets/figures/explore/project-view/title-header.png)
+
+## 2. Keywords/Tags
 
 This section displays all the keywords and licenses related to the project in GitLab. It's important because it's used as a label to filter out projects with common criteria or specifications. Moreover, tags are used to improve searches, as described in the [tag search section](./search.md#tag-search-tab).
 
-## 3. Controls Button set
+## 3. Helpers
 
-This important section allows you to interact with the project with the following functionalities:
+This group of buttons are helpers.
 
-### Open project in Jupyter Notebook
+![Helpers](../assets/figures/explore/project-view/helpers.png)
+
+### STAC
+
+The STAC helper display download code with the STAC API by using Python `requests` and EODAG, as well as STAC informations.
+
+![STAC helper](../assets/figures/explore/project-view/stac-helper.png)
+
+### DVC
+
+The DVC button displays configuration and setup of DVC for the project.
+The DVC service enables you to store large volumes of data. The DVC button is therefore only displayed for projects in the "Datasets" category, which have a DVC configuration in the source GitLab project. This button displays the remote DVC configuration link and additional information on the DVC [documentation](https://dvc.org/doc) and [tutorial](../tutorials/manage_dataset_with_dvc.md).
+
+![DVC helper](../assets/figures/explore/project-view/dvc-helper.png)
+
+### MLflow
+
+The MLflow helper shows MLflow basic code setup with autolog feature, and display a button to go to the MLflow web interface.
+
+![MLflow helper](../assets/figures/explore/project-view/mlflow-helper.png)
+
+## 4. Action buttons
+
+The actions buttons are divided in 2 groups. On the left are helpers, on the right features.
+
+### Edit project
+
+Open embedded GitLab code editor to edit the project.
+
+![open in code editor](../assets/figures/explore/project-view/edit.png)
+
+Clicking will open a new tab:
+
+![GitLab code editor](../assets/figures/explore/project-view/gitlab-editor.png)
+
+### Open in Jupyter
 
 If the SharingHub is configured with a notebook service, this button will appear, allowing you to open the project, in particular your AI model in a notebook, for testing or manipulation in a dedicated environment.
 
-![open in notebook](../assets/figures/explore/project-view/category_overview_notebook.png)
+![open in notebook](../assets/figures/explore/project-view/jupyter-btn.png)
 
 When you click the open button, the Jupyter environment is launched to open the target Notebook.
 Click on the "Launch Server" button.
 At next page, select "vreot-cloud" environment and click on "Start" button.
 
-![start vre](../assets/figures/explore/project-view/category_overview_start_jupyter1.png)
+![Start vre](../assets/figures/explore/project-view/start-jupyter1.png)
 
-![start vre](../assets/figures/explore/project-view/category_overview_start_jupyter2.png)
+![Start vre 2](../assets/figures/explore/project-view/start-jupyter2.png)
 
-![vre launched with project](../assets/figures/explore/project-view/category_overview_vre_launched.png)
+![VRE launched with project](../assets/figures/explore/project-view/vre-launched.png)
 
 !!! info
     **_Configure destination folder_**
@@ -56,53 +93,22 @@ At next page, select "vreot-cloud" environment and click on "Start" button.
 
     Finally, restart Jupyter for that configuration to be applied.
 
-### Display DVC information
+## 5. Tabs
 
-The DVC service enables you to store large volumes of data. The DVC button is therefore only displayed for projects in the "Datasets" category, which have a DVC configuration in the source GitLab project.  This button displays the remote DVC configuration link and additional information on the DVC [documentation](https://dvc.org/doc) and [tutorial](../tutorials/manage_dataset_with_dvc.md).
-
-![dvc button](../assets/figures/explore/project-view/category_overview_dvc.png)
-
-### Share the project
-
-The share button lets you share a direct link to the project with other colleagues.
-
-![share project](../assets/figures/explore/project-view/category_overview_share.png)
-
-### Star the project
-
-If you like the project, you will be able to star it and it will appear in your [favorite projects](./search.md#filter-by-starred-projects).
-
-![star project](../assets/figures/explore/project-view/category_overview_star.png)
-![unstar project](../assets/figures/explore/project-view/category_overview_unstar.png)
-
-!!! Note Warning
-
-    If the default token is enabled, filter by star button is not visible because we are in read-only mode.
-
-    ![control set limitless](../assets/figures/explore/project-view/category_overview_limitless.png)
-
-## 4. Dynamics Tabs
-
-This section displays details, comments and the STAC API in tabbed format.
+The tabs allow to switch between multiple views.
 
 ### Details Tab
 
 This "details" tab displays the project description first. This view highlights all the project's files and resources in the "assets" section, and thanks to the "additional resources" section it's possible to see references to other projects or resources.
 
-![detail tab](../assets/figures/explore/project-view/dynamic_tab-detail.png)
+![Detail tab](../assets/figures/explore/project-view/tab-details.png)
 
 In some cases, and more generally for datasets, the details tab may show a map with an area corresponding to the geographic extent of the dataset.
 
-![detail tab show map](../assets/figures/explore/project-view/dynamic_tab-map.png)
+![Detail tab show map](../assets/figures/explore/project-view/tab-map.png)
 
 ### Reviews Tab
 
 This section is a discussion forum for the project, allowing contributors to leave notes and ask questions to each other.
 
-![review tab](../assets/figures/explore/project-view/dynamics_tab-review.png)
-
-### STAC API Tab
-
-This section shows the STAC API informations of the project, the link to the STAC file of the project and also checks if the project is valid according to the supported STAC extensions.
-
-![STAC Api tab ](../assets/figures/explore/project-view/dynamic_tab-api.png)
+![Review tab](../assets/figures/explore/project-view/tab-review.png)

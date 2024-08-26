@@ -96,13 +96,14 @@ nav:
           - legal/privacy.md
   - Explore:
       - explore/overview.md
-      - Features:
-          - explore/auth.md
-          - Navigation:
-              - explore/categories.md
-              - explore/search.md
+      - explore/categories.md
+      - Website:
+          - explore/login.md
+          - explore/search.md
           - explore/project-view.md
-          - explore/stac-api.md
+      - API:
+          - explore/api-auth.md
+          - explore/api-stac.md
           - explore/api-reference.md
   - Share:
       - share/overview.md
