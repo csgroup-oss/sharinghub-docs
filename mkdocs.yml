@@ -81,6 +81,7 @@ plugins:
       render_by_default: false
   - search:
       lang: en
+  - swagger-ui-tag
   - tags
 
 # Page tree
@@ -95,6 +96,7 @@ nav:
               - explore/search.md
           - explore/project-view.md
           - explore/stac-api.md
+          - explore/api-reference.md
   - Share:
       - share/overview.md
       - Metadata:
