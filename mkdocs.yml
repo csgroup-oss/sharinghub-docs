@@ -86,7 +86,14 @@ plugins:
 
 # Page tree
 nav:
-  - Home: index.md
+  - Home:
+      - index.md
+      - Design:
+        - design/philosophy.md
+        - design/architecture.md
+      - Legal Notice:
+          - legal/license.md
+          - legal/privacy.md
   - Explore:
       - explore/overview.md
       - Features:
@@ -115,13 +122,9 @@ nav:
       - tutorials/manage_dataset_with_dvc.md
       - tutorials/manage_dataset_with_shell.md
   - Resources:
-      - resources/architecture.md
       - resources/index.md
-      - resources/ogc.md
       - resources/stac.md
-  - Legal Notice:
-      - legal/license.md
-      - legal/privacy.md
+      - resources/ogc.md
 
 # Footer links
 extra:
