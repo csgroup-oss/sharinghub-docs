@@ -63,7 +63,7 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
-      base_path: ["src"]
+      base_path: [".", "src"]
       check_paths: true
   - pymdownx.superfences
   - pymdownx.tabbed:
@@ -118,6 +118,7 @@ nav:
       - resources/ogc.md
       - resources/stac.md
   - Legal Notice:
+      - legal/license.md
       - legal/privacy.md
 
 # Footer links
