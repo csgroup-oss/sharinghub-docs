@@ -121,7 +121,6 @@ nav:
           - DVC: share/data/dvc.md
   - Tutorials:
       - tutorials/manage_dataset_with_dvc.md
-      - tutorials/manage_dataset_with_shell.md
   - Resources:
       - resources/index.md
       - resources/stac.md
