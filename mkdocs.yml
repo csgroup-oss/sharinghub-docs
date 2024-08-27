@@ -119,6 +119,10 @@ nav:
           - share/data/index.md
           - Git LFS: share/data/git-lfs.md
           - DVC: share/data/dvc.md
+      - ML Tracking:
+          - share/ml-tracking/index.md
+          - GitLab Integration: share/ml-tracking/gitlab.md
+          - SharingHub Integration: share/ml-tracking/mlflow-sharinghub.md
   - Tutorials:
       - tutorials/manage_dataset_with_dvc.md
   - Resources:
