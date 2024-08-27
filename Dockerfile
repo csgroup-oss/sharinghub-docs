@@ -7,6 +7,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 RUN mkdir -p /docs
 COPY mkdocs.yml /docs
+COPY LICENSE /docs
 COPY src /docs/src
 
 WORKDIR /docs
