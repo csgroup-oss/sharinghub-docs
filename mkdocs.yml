@@ -63,7 +63,7 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.snippets:
-      base_path: ["src"]
+      base_path: [".", "src"]
       check_paths: true
   - pymdownx.superfences
   - pymdownx.tabbed:
@@ -81,20 +81,30 @@ plugins:
       render_by_default: false
   - search:
       lang: en
+  - swagger-ui-tag
   - tags
 
 # Page tree
 nav:
-  - Home: index.md
+  - Home:
+      - index.md
+      - Design:
+        - design/philosophy.md
+        - design/architecture.md
+      - Legal Notice:
+          - legal/license.md
+          - legal/privacy.md
   - Explore:
       - explore/overview.md
-      - Features:
-          - explore/auth.md
-          - Navigation:
-              - explore/categories.md
-              - explore/search.md
+      - explore/categories.md
+      - Website:
+          - explore/login.md
+          - explore/search.md
           - explore/project-view.md
-          - explore/stac-api.md
+      - API:
+          - explore/api-auth.md
+          - explore/api-stac.md
+          - explore/api-reference.md
   - Share:
       - share/overview.md
       - Metadata:
@@ -109,16 +119,16 @@ nav:
           - share/data/index.md
           - Git LFS: share/data/git-lfs.md
           - DVC: share/data/dvc.md
+      - ML Tracking:
+          - share/ml-tracking/index.md
+          - GitLab Integration: share/ml-tracking/gitlab.md
+          - SharingHub Integration: share/ml-tracking/mlflow-sharinghub.md
   - Tutorials:
       - tutorials/manage_dataset_with_dvc.md
-      - tutorials/manage_dataset_with_shell.md
   - Resources:
-      - resources/architecture.md
       - resources/index.md
-      - resources/ogc.md
       - resources/stac.md
-  - Legal Notice:
-      - legal/privacy.md
+      - resources/ogc.md
 
 # Footer links
 extra:

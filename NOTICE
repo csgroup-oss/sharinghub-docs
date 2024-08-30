@@ -15,6 +15,7 @@ See project link for details.
 
 - mkdocs-material: https://github.com/squidfunk/mkdocs-material
 - mkdocs-macros-plugin: https://github.com/fralau/mkdocs-macros-plugin
+- mkdocs-swagger-ui-tag: https://github.com/Blueswen/mkdocs-swagger-ui-tag
 
 ================================================================
 The BSD-2-Clause License

@@ -6,5 +6,5 @@ The SharingHub home page presents the platform's various functionalities and nav
 Users must log in to access all SharingHub features, although a restricted version is available if the user is not logged in.
 
 <figure markdown>
-![home_page_screenshot](../assets/figures/explore/home_page_1.png)
+![home_page_screenshot](../assets/figures/explore/home-page.png)
 </figure>

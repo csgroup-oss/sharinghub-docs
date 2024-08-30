@@ -1,8 +1,3 @@
----
-hide:
-  - navigation
----
-
 # Welcome to SharingHub
 
 <figure markdown>
@@ -16,6 +11,9 @@ We take inspiration from [Hugging Face](https://huggingface.co/), the most used 
 
 ## Features
 
+!!! warning
+    Because SharingHub itself is configurable, and rely on your GitLab instance, some features may not be available for your instance.
+
 ### GitLab integration
 
 Very light, SharingHub is deployed on top of a [GitLab](https://about.gitlab.com/) instance, and dynamically extracts metadata from the shared projects to serve them through its web interface, as well as a normalized API.
@@ -27,3 +25,7 @@ Our API implements the [STAC specification](https://stacspec.org), and more prec
 ### Data storage
 
 We can deliver large datasets by offering a [DVC](https://dvc.org) remote (S3 store), and support of [Git LFS](https://git-lfs.com/) for compatible GitLab instances.
+
+### Machine learning tracking
+
+With its integration with [MLflow](https://mlflow.org/), the SharingHub can be used for remote tracking of ML training. The tracking is directly linked to the repository containing the model, to keep the training runs close to the source code.
