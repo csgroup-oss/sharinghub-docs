@@ -17,7 +17,17 @@ Permissions mapping with GitLab (for experiments, runs, model registry...):
 
 ## Authentication
 
+### Web
+
 MLflow SharingHub uses SharingHub authentication session, meaning that **if you login in SharingHub, you should also be authenticated in MLflow SharingHub**.
+
+### API
+
+You can authenticate with the MLflow API by setting an environment variable, `MLFLOW_TRACKING_TOKEN`, with an access token as value.
+
+The MLflow code generator can help you:
+
+![MLflow credentials setup](../../assets/figures/share/mlflow-credentials-setup.png)
 
 ## Limitations
 
