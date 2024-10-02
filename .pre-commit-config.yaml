@@ -38,9 +38,9 @@ repos:
     rev: v0.39.0
     hooks:
     - id: markdownlint-fix
-      args: [ --disable, MD013, MD033, MD046, -- ]
+      args: [ --disable, MD013, MD013, MD033, MD046, -- ]
     - id: markdownlint
-      args: [ --disable, MD013, MD033, MD046, -- ]
+      args: [ --disable, MD013, MD013, MD033, MD046, -- ]
 
   - repo: https://github.com/hadolint/hadolint
     rev: v2.12.0
