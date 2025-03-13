@@ -125,6 +125,7 @@ nav:
           - share/examples/dataset-case.md
   - Tutorials:
       - tutorials/dataset_with_dvc.md
+      - tutorials/dataset_with_huggingface_interface.md
   - Resources:
       - resources/index.md
       - resources/stac.md
