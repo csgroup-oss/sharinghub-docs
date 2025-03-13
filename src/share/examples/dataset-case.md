@@ -13,7 +13,7 @@ To share your dataset on the SharingHub, you need to set up your GitLab reposito
 To make your dataset usable by others, you need to create a `README.md` file. This file should begin with a YAML section describing your dataset's metadata, followed by a markdown section:
 
 - The markdown part of your README must contain all useful information about the dataset: how to use it and in what context, how it was created etc...
-- The YAML section is delimited by three `---` at the top of your file and at the end of the section. It contains the metadata presented in the \[[Reference](./reference.md)].
+- The YAML section is delimited by three `---` at the top of your file and at the end of the section. It contains the metadata presented in the \[[Reference](../metadata/reference.md)].
 
 ## Structure
 
@@ -35,7 +35,7 @@ The repository tree:
     └── image.png
 ```
 
-You may notice the "dvc" extensions, this is because we use [DVC](../data/dvc.md) to store the files. Learn more in the tutorial ["Manage large dataset with DVC"](../../tutorials/manage_dataset_with_dvc.md).
+You may notice the "dvc" extensions, this is because we use [DVC](../data/dvc.md) to store the files. Learn more in the tutorial ["Dataset with DVC"](../../tutorials/dataset_with_dvc.md).
 
 ## Metadata
 
@@ -63,6 +63,6 @@ label:
 
 Let’s break down the project's metadata.
 
-- `assets`: define the files in the repository that we want to share with SharingHub. [[Ref](./reference.md#assets)]
-- `gsd`: pure STAC property. [[Ref](./reference.md#remaining-properties)]
-- `label`: a [STAC extension](https://github.com/stac-extensions/label), adapted to the dataset use-case. [[Ref](./reference.md#extensions)]
+- `assets`: define the files in the repository that we want to share with SharingHub. [[Ref](../metadata/reference.md#assets)]
+- `gsd`: pure STAC property. [[Ref](../metadata/reference.md#remaining-properties)]
+- `label`: a [STAC extension](https://github.com/stac-extensions/label), adapted to the dataset use-case. [[Ref](../metadata/reference.md#extensions)]
