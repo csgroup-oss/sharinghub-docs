@@ -13,7 +13,7 @@ To share your artificial intelligence model on the SharingHub, you need to set u
 To make your model usable by others, you need to create a `README.md` file. This file should begin with a YAML section describing your model's metadata, followed by a markdown section:
 
 - The markdown part of your README must contain all the elements needed to train and/or make an inference with your AI model!
-- The YAML section is delimited by three `---` at the top of your file and at the end of the section. It contains the metadata presented in the \[[Reference](./reference.md)].
+- The YAML section is delimited by three `---` at the top of your file and at the end of the section. It contains the metadata presented in the \[[Reference](../metadata/reference.md)].
 
 ## Structure
 
@@ -75,8 +75,8 @@ ml-model:
 
 Let’s break down the project's metadata.
 
-- `title`: override the default title, which is the name of the GitLab project "Unet Building Footprint Segmentation Aerial Image". [[Ref](./reference.md#title)]
-- `assets`: define the files in the repository that we want to share with SharingHub. [[Ref](./reference.md#assets)]
-- `gsd` and `platform` are pure STAC properties. [[Ref](./reference.md#remaining-properties)]
-- `providers`: override the default providers. [[Ref](./reference.md#providers)]
-- `label` and `ml-model` are STAC extensions. Our model here uses the adapted STAC extensions with its use-case, [label](https://github.com/stac-extensions/label) and [ml-model](https://github.com/stac-extensions/ml-model). [[Ref](./reference.md#extensions)]
+- `title`: override the default title, which is the name of the GitLab project "Unet Building Footprint Segmentation Aerial Image". [[Ref](../metadata/reference.md#title)]
+- `assets`: define the files in the repository that we want to share with SharingHub. [[Ref](../metadata/reference.md#assets)]
+- `gsd` and `platform` are pure STAC properties. [[Ref](../metadata/reference.md#remaining-properties)]
+- `providers`: override the default providers. [[Ref](../metadata/reference.md#providers)]
+- `label` and `ml-model` are STAC extensions. Our model here uses the adapted STAC extensions with its use-case, [label](https://github.com/stac-extensions/label) and [ml-model](https://github.com/stac-extensions/ml-model). [[Ref](../metadata/reference.md#extensions)]

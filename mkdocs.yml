@@ -110,11 +110,8 @@ nav:
       - Metadata:
           - share/metadata/index.md
           - share/metadata/configuration.md
-          - share/metadata/reference.md
-          - Examples:
-              - share/metadata/model-case.md
-              - share/metadata/dataset-case.md
           - share/metadata/stac-concepts.md
+          - share/metadata/reference.md
       - Data:
           - share/data/index.md
           - Git LFS: share/data/git-lfs.md
@@ -123,8 +120,12 @@ nav:
           - share/ml-tracking/index.md
           - GitLab Integration: share/ml-tracking/gitlab.md
           - SharingHub Integration: share/ml-tracking/mlflow-sharinghub.md
+      - Examples:
+          - share/examples/model-case.md
+          - share/examples/dataset-case.md
   - Tutorials:
-      - tutorials/manage_dataset_with_dvc.md
+      - tutorials/dataset_with_dvc.md
+      - tutorials/dataset_with_huggingface_interface.md
   - Resources:
       - resources/index.md
       - resources/stac.md

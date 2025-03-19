@@ -29,7 +29,7 @@ The STAC helper display download code with the STAC API by using Python `request
 ### DVC
 
 The DVC button displays configuration and setup of DVC for the project.
-The DVC service enables you to store large volumes of data. The DVC button is therefore only displayed for projects in the "Datasets" category, which have a DVC configuration in the source GitLab project. This button displays the remote DVC configuration link and additional information on the DVC [documentation](https://dvc.org/doc) and [tutorial](../tutorials/manage_dataset_with_dvc.md).
+The DVC service enables you to store large volumes of data. The DVC button is therefore only displayed for projects in the "Datasets" category, which have a DVC configuration in the source GitLab project. This button displays the remote DVC configuration link and additional information on the DVC [documentation](https://dvc.org/doc) and [tutorial](../tutorials/dataset_with_dvc.md).
 
 ![DVC helper](../assets/figures/explore/project-view/dvc-helper.png)
 
