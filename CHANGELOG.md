@@ -1,6 +1,6 @@
 # Changelog
 
-## 0.4.0 (October 2024)
+## 0.4.0 (March 2025)
 
 - Re-organize pages
 - Update DVC tutorial
