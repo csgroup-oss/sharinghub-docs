@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.4.0 (October 2024)
+
+- Re-organize pages
+- Update DVC tutorial
+- Add tutorial for dataset with huggingface interface
+
 ## 0.3.0 (October 2024)
 
 - Update explore tab
