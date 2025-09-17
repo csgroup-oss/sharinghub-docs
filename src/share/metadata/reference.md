@@ -242,7 +242,7 @@ Notice that because our `assets` metadata is a list and not a mapping, we add th
 !!! tip
     Check [Helpers](#helpers) to learn some extra features for the asset's `href`.
 
-##### Alter files assets
+##### Alter assets
 
 By default, an asset generated from a file only have an `href`, a `roles: [data]`, and a `type` if it was guessed. But, don't hesitate to improve your assets by adding a `title` an a `description`! We offer some utility features to alter your assets per match.
 
@@ -255,6 +255,15 @@ assets:
 ```
 
 A file asset key in the assets mapping is by default the path of the file, but you can change it. You can use `{path}` in `key`, `title`, `description` and `{key}` in `title`, `description`. This will let you interpolate the value for each match, and is really helpful here to change the asset key for each of the python files.
+
+This syntax also applies to MLflow models retrieved from the MLflow model registry. You can use it to improve their metadata, with the use of [mlm](https://github.com/stac-extensions/mlm) for example:
+
+```yaml title="Metadata example"
+assets:
+  - glob: "*.onnx"
+    roles: ["data", "mlm:model"]
+    mlm:artifact_type: "onnx"
+```
 
 ### Extensions
 
