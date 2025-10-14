@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.4.1 (October 2025)
+
+- Correct share reference section about altering assets including mlflow models
+
 ## 0.4.0 (March 2025)
 
 - Re-organize pages
